@@ -1,0 +1,12 @@
+/* src/index.css */
+@import "tailwindcss";
+
+
+
+/* Tailwind öncesi genel reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #eaeaf1; /* Veya istediğin renk */
+}
