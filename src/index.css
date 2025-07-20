@@ -8,5 +8,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #eaeaf1; /* Veya istediğin renk */
+}
+
+body {
+  @apply bg-gradient-to-br from-purple-400 via-pink-300 to-blue-400;
 }
