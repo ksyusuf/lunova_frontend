@@ -35,7 +35,12 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-lg font-bold tracking-wide drop-shadow">Lunova</a>
         <div className="space-x-4 flex items-center">
-          {loading ? null : user ? (
+          {loading ? (
+            <div className="flex space-x-2">
+              <div className="w-20 h-6 bg-gray-300/50 rounded animate-pulse" />
+              <div className="w-20 h-6 bg-gray-300/50 rounded animate-pulse" />
+            </div>
+          ) : user ? (
             <>
               <span className="font-semibold">Merhaba, {user.username}!</span>
               <button
