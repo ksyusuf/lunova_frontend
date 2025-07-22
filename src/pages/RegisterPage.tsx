@@ -27,7 +27,8 @@ export default function RegisterPage() {
       const response = await axios.post("http://127.0.0.1:8000/api/v1/accounts/register/", form);
       setSuccess("Kayıt başarılı! Giriş yapabilirsiniz.");
     } catch (err: any) {
-      setError(err.response?.data?.detail || "Kayıt başarısız.");
+      setError(err.response?.data || "Kayıt başarısız.");
+      console.log(err); 
     } finally {
       setLoading(false);
     }
