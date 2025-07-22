@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import api from "../api";
 
 export default function Navbar() {
   const [user, setUser] = useState<{ username: string } | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/v1/accounts/me/", { withCredentials: true })
+    api.get("/api/v1/accounts/me/")
       .then(res => setUser(res.data))
       .catch(() => setUser(null))
       .finally(() => setLoading(false));
@@ -15,10 +15,9 @@ export default function Navbar() {
   const handleLogout = async () => {
     setLoading(true);
     try {
-      await axios.post(
-        "http://127.0.0.1:8000/api/v1/accounts/logout/",
-        {},
-        { withCredentials: true }
+      await api.post(
+        "/api/v1/accounts/logout/",
+        {}
       );
       setUser(null);
       window.location.reload();

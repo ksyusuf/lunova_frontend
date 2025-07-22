@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import api from "../api";
 
 export default function RegisterPage() {
   const [form, setForm] = useState({
@@ -24,7 +24,7 @@ export default function RegisterPage() {
     setSuccess("");
     setLoading(true);
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/v1/accounts/register/", form);
+      const response = await api.post("/api/v1/accounts/register/", form);
       setSuccess("Kayıt başarılı! Giriş yapabilirsiniz.");
     } catch (err: any) {
       setError(err.response?.data || "Kayıt başarısız.");

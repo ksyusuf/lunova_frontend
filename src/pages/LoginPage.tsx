@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import api from "../api";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -14,10 +14,9 @@ export default function LoginPage() {
     setSuccess("");
     setLoading(true);
     try {
-      await axios.post(
-        "http://127.0.0.1:8000/api/v1/accounts/login/",
-        { username, password },
-        { withCredentials: true }
+      await api.post(
+        "/api/v1/accounts/login/",
+        { username, password }
       );
       setSuccess("Başarıyla giriş yapıldı!");
       window.location.href = "/";
