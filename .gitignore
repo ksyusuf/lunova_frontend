@@ -16,8 +16,6 @@ node_modules/
 
 # Local env files
 .env
-.env.*.local
-.env.local
 .env.production
 
 # Editor directories and files
