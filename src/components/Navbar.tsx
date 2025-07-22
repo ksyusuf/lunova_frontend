@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import api from "../api";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [user, setUser] = useState<{ username: string } | null>(null);
+  const [user, setUser] = useState<{ first_name: string; last_name: string; email: string } | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Navbar() {
             </div>
           ) : user ? (
             <>
-              <span className="font-semibold">Merhaba, {user.username}!</span>
+              <span className="font-semibold">Merhaba, {user.first_name} {user.last_name}!</span>
               <button
                 onClick={handleLogout}
                 className="ml-4 bg-gradient-to-r from-blue-900 via-pink-700 to-purple-800 text-white font-semibold py-1 px-3 rounded shadow hover:opacity-90 transition"
@@ -53,7 +54,7 @@ export default function Navbar() {
           ) : (
             <>
               <a href="/login" className="hover:underline hover:text-pink-100 transition">Giriş Yap</a>
-              <a href="/register" className="hover:underline hover:text-pink-100 transition">Kayıt Ol</a>
+              <Link to="/register" className="hover:underline hover:text-pink-100 transition">Kayıt Ol</Link>
             </>
           )}
         </div>
