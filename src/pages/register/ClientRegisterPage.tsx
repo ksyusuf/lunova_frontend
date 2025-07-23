@@ -26,7 +26,7 @@ export default function ClientRegisterPage() {
     setSuccess("");
     setLoading(true);
     try {
-      const response = await api.post("/api/v1/accounts/register/", {
+      await api.post("/api/v1/accounts/register/", {
         ...form,
         role: "client",
       });
