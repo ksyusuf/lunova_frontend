@@ -53,7 +53,7 @@ export default function Navbar() {
             </>
           ) : (
             <>
-              <a href="/login" className="hover:underline hover:text-pink-100 transition">Giriş Yap</a>
+              <Link to="/login" className="hover:underline hover:text-pink-100 transition">Giriş Yap</Link>
               <Link to="/register" className="hover:underline hover:text-pink-100 transition">Kayıt Ol</Link>
             </>
           )}
