@@ -2,7 +2,6 @@
 @import "tailwindcss";
 
 
-
 /* Tailwind öncesi genel reset */
 html, body {
   margin: 0;
@@ -11,5 +10,5 @@ html, body {
 }
 
 body {
-  @apply bg-gradient-to-br from-purple-400 via-pink-300 to-blue-400;
+  @apply bg-gradient-to-br from-purple-900 via-blue-900 to-gray-900;
 }

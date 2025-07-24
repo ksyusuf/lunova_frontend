@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import api from "../../api";
 
 export default function ClientRegisterPage() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     first_name: "",
     last_name: "",
@@ -12,8 +14,8 @@ export default function ClientRegisterPage() {
     password2: "",
   });
   const [errors, setErrors] = useState<{ [key: string]: string[] }>({});
-  const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false);
+  const [redirecting, setRedirecting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -23,14 +25,17 @@ export default function ClientRegisterPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrors({});
-    setSuccess("");
     setLoading(true);
     try {
       await api.post("/api/v1/accounts/register/", {
         ...form,
         role: "client",
       });
-      setSuccess("Kayıt başarılı! Giriş yapabilirsiniz.");
+      setRedirecting(true);
+      localStorage.setItem("registered_email", form.email);
+      setTimeout(() => {
+        navigate("/login");
+      }, 3000);
     } catch (err: any) {
       if (err.response?.data && typeof err.response.data === "object") {
         setErrors(err.response.data);
@@ -45,7 +50,7 @@ export default function ClientRegisterPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh]">
-      <h2 className="text-2xl font-bold mb-4">Danışan Kayıt</h2>
+      <h2 className="text-2xl font-bold mb-4 text-white mt-8">Danışan Kayıt</h2>
       {errors.non_field_errors && (
         <div className="text-red-600 text-sm mb-2">
           {errors.non_field_errors.map((msg, i) => (
@@ -53,7 +58,6 @@ export default function ClientRegisterPage() {
           ))}
         </div>
       )}
-      {success && <div className="text-green-600 text-sm mb-2">{success}</div>}
       <form onSubmit={handleSubmit} className="bg-white/80 rounded-lg shadow p-6 w-full max-w-sm flex flex-col gap-4">
         <div>
           <input
@@ -155,10 +159,13 @@ export default function ClientRegisterPage() {
         </div>
         <button
           type="submit"
-          className="bg-gradient-to-r from-blue-900 via-pink-700 to-purple-800 text-white font-semibold py-2 rounded shadow hover:opacity-90 transition"
-          disabled={loading}
+          className="bg-gradient-to-br from-gray-800/90 via-gray-900/80 to-gray-800/90 bg-gray-900/90 text-white border border-purple-200/40 font-semibold py-2 rounded shadow hover:opacity-90 transition flex items-center justify-center gap-2 cursor-pointer"
+          disabled={loading || redirecting}
         >
-          {loading ? "Kayıt Olunuyor..." : "Kayıt Ol"}
+          {(loading || redirecting) && (
+            <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg>
+          )}
+          {loading || redirecting ? "Kayıt Olunuyor..." : "Kayıt Ol"}
         </button>
       </form>
     </div>

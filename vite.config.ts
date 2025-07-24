@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 
-function iisWebConfigPlugin() {
+function iisWebConfigPlugin(outDir: string) {
   return {
     name: 'vite-plugin-iis-webconfig',
     closeBundle() {
@@ -25,23 +25,23 @@ function iisWebConfigPlugin() {
   </system.webServer>
 </configuration>
 `;
-      // outDir'yi config'ten almak için process.env kullanıyoruz
-      const outDir = process.env.NODE_ENV === 'development'
-        ? 'build'
-        : 'C:/production-versions/npm-builds';
       writeFileSync(resolve(outDir, 'web.config'), webConfigContent, 'utf-8');
     }
   };
 }
 
-export default defineConfig(() => {
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), '');
+  const outDir = env.VITE_ENVIRONMENT === 'development'
+    ? 'dist'
+    : 'C:/production-versions/npm-builds';
   return {
     plugins: [
       react(),
-      iisWebConfigPlugin(),
+      iisWebConfigPlugin(outDir),
     ],
     build: {
-      outDir: process.env.NODE_ENV === 'development' ? 'build' : 'C:/production-versions/npm-builds',
+      outDir,
     },
   };
 });

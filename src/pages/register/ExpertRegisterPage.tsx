@@ -45,7 +45,7 @@ export default function ExpertRegisterPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh]">
-      <h2 className="text-2xl font-bold mb-4">Uzman Kayıt</h2>
+      <h2 className="text-2xl font-bold mb-4 text-white mt-8">Uzman Kayıt</h2>
       {errors.non_field_errors && (
         <div className="text-red-600 text-sm mb-2">
           {errors.non_field_errors.map((msg, i) => (
@@ -155,7 +155,7 @@ export default function ExpertRegisterPage() {
         </div>
         <button
           type="submit"
-          className="bg-gradient-to-r from-purple-800 via-pink-700 to-blue-900 text-white font-semibold py-2 rounded shadow hover:opacity-90 transition"
+          className="bg-gradient-to-br from-gray-800/90 via-gray-900/80 to-gray-800/90 bg-gray-900/90 text-white border border-purple-200/40 font-semibold py-2 rounded shadow hover:opacity-90 transition cursor-pointer"
           disabled={loading}
         >
           {loading ? "Kayıt Olunuyor..." : "Kayıt Ol"}
