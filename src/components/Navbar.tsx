@@ -42,7 +42,7 @@ export default function Navbar() {
               <span className="font-semibold">Merhaba, {user.first_name} {user.last_name}!</span>
               <button
                 onClick={handleLogout}
-                className="ml-4 bg-gradient-to-r from-purple-300 to-blue-200 text-gray-900 font-semibold py-1 px-3 rounded shadow hover:opacity-90 transition flex items-center justify-center gap-2 min-w-[90px] min-h-[32px] cursor-pointer"
+                className="ml-4 bg-gradient-to-br from-gray-800/90 via-gray-900/80 to-gray-800/90 bg-gray-900/90 text-white border border-purple-200/40 font-semibold py-2 px-4 rounded shadow hover:opacity-90 transition flex items-center justify-center gap-2 min-w-[90px] min-h-[32px] cursor-pointer"
                 disabled={loading || logoutLoading}
               >
                 {logoutLoading ? (
