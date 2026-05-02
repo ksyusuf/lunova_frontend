@@ -3,16 +3,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import JobCard from '../components/JobCard';
 import { mockJobs } from '../data/mockJobs';
+import TopBanner from '../components/TopBanner';
 
 const Careers = () => {
   return (
     <div className="antialiased bg-body text-body font-body">
-      {/* Top Banner */}
-      <div>
-        <p className="mb-0 py-3 bg-lime-500 text-center text-white">
-          Bağımlılıkla mücadelede yanınızdayız. İyileşme yolculuğunuzda destek için <a href="#!" className="underline font-semibold">bize ulaşın</a>.
-        </p>
-      </div>
+      <TopBanner />
 
       <Header />
 

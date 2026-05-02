@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import TopBanner from '../components/TopBanner';
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -27,13 +28,7 @@ const Register = () => {
 
   return (
     <div className="antialiased bg-body text-body font-body">
-      {/* Top Banner */}
-      <div>
-        <p className="mb-0 py-3 bg-lime-500 text-center">
-          Want to learn how to build templates like this one? Visit{' '}
-          <a href="#!">www.pixelrocket.store</a>
-        </p>
-      </div>
+      <TopBanner />
 
       <Header />
 

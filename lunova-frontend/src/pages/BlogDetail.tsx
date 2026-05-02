@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { mockBlogPosts } from '../data/mockBlogPosts';
+import TopBanner from '../components/TopBanner';
 
 const BlogDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,12 +29,7 @@ const BlogDetail = () => {
 
   return (
     <div className="antialiased bg-body text-body font-body">
-      {/* Top Banner */}
-      <div>
-        <p className="mb-0 py-3 bg-lime-500 text-center">
-          Bağımlılıkla mücadelede yanınızdayız. İyileşme yolculuğunuzda destek için <a href="#!" className="underline font-semibold">bize ulaşın</a>.
-        </p>
-      </div>
+      <TopBanner />
 
       <Header />
 

@@ -1,17 +1,12 @@
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import TopBanner from '../components/TopBanner';
 
 const Pricing = () => {
   return (
     <div className="antialiased bg-body text-body font-body">
-      {/* Top Banner */}
-      <div>
-        <p className="mb-0 py-3 bg-lime-500 text-center">
-          Want to learn how to build templates like this one? Visit{' '}
-          <a href="#!">www.pixelrocket.store</a>
-        </p>
-      </div>
+      <TopBanner />
 
       <Header />
 
@@ -20,21 +15,21 @@ const Pricing = () => {
         <img className="absolute top-0 right-0" src="/fauna-assets/pricing/waves-right-top.png" alt="" />
         <div className="container mx-auto px-4 relative">
           <div className="max-w-2xl mx-auto text-center mb-20">
-            <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl tracking-xs mb-6">Pricing</h1>
-            <p className="text-lg text-gray-700">Our pricing plans are simple and designed to cater to households and companies of various sizes. Choose a plan that suits your needs and budget.</p>
+            <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl tracking-xs mb-6">Fiyatlandırma</h1>
+            <p className="text-lg text-gray-700">Fiyatlandırma planlarımız sade ve farklı büyüklükteki bireyler ile kurumlar için tasarlanmıştır. İhtiyaçlarınıza ve bütçenize en uygun planı seçin.</p>
           </div>
           <div className="flex flex-wrap -mx-4 mb-24">
             <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
               <div className="relative pt-14 pb-8 px-8 bg-orange-50 rounded-2xl overflow-hidden">
                 <div className="absolute top-0 left-0 h-1 w-full bg-lime-500"></div>
-                <span className="block text-2xl font-medium mb-6">Basic</span>
+                <span className="block text-2xl font-medium mb-6">Başlangıç</span>
                 <div className="flex items-center mb-6">
-                  <span className="text-6xl">$59</span>
-                  <span className="ml-4 text-xl font-medium text-gray-700">per month</span>
+                  <span className="text-6xl">₺1.490</span>
+                  <span className="ml-4 text-xl font-medium text-gray-700">/ ay</span>
                 </div>
-                <p className="text-lg mb-8">For small households or businesses with moderate energy consumption</p>
+                <p className="text-lg mb-8">Bireysel destek almak isteyen kişiler için ideal plan</p>
                 <Link className="inline-flex w-full group py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" to="#!">
-                  <span className="mr-2">Get started</span>
+                  <span className="mr-2">Başlayın</span>
                   <span className="transform group-hover:translate-x-1 transition-transform duration-200">
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.25 10H15.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -47,16 +42,16 @@ const Pricing = () => {
             <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
               <div className="relative pt-14 pb-8 px-8 bg-lime-500 rounded-2xl overflow-hidden">
                 <div className="absolute top-0 left-0 w-full py-0.5 flex items-center justify-center bg-teal-900">
-                  <span className="text-xs leading-7 text-white">Recommended</span>
+                  <span className="text-xs leading-7 text-white">Önerilen</span>
                 </div>
                 <span className="block text-2xl font-medium mb-6">Premium</span>
                 <div className="flex items-center mb-6">
-                  <span className="text-6xl">$129</span>
-                  <span className="ml-4 text-xl font-medium text-gray-700">per month</span>
+                  <span className="text-6xl">₺2.990</span>
+                  <span className="ml-4 text-xl font-medium text-gray-700">/ ay</span>
                 </div>
-                <p className="text-lg mb-8">For larger households or businesses with higher energy consumption</p>
+                <p className="text-lg mb-8">Daha kapsamlı destek arayan bireyler ve aileler için</p>
                 <Link className="inline-flex w-full group py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" to="#!">
-                  <span className="mr-2">Get started</span>
+                  <span className="mr-2">Başlayın</span>
                   <span className="transform group-hover:translate-x-1 transition-transform duration-200">
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.25 10H15.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -69,11 +64,11 @@ const Pricing = () => {
             <div className="w-full lg:w-1/3 px-4">
               <div className="relative pt-14 pb-8 px-8 bg-orange-50 rounded-2xl overflow-hidden">
                 <div className="absolute top-0 left-0 h-1 w-full bg-lime-500"></div>
-                <span className="block text-2xl font-medium mb-6">Enterprise</span>
-                <span className="block text-6xl mb-6">Custom</span>
-                <p className="text-lg mb-8">Tailored for businesses with significant energy demands</p>
+                <span className="block text-2xl font-medium mb-6">Kurumsal</span>
+                <span className="block text-6xl mb-6">Özel</span>
+                <p className="text-lg mb-8">Kurumsal ihtiyaçlara özel olarak hazırlanmış çözüm</p>
                 <Link className="inline-flex w-full group py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" to="#!">
-                  <span className="mr-2">Get started</span>
+                  <span className="mr-2">Teklif Alın</span>
                   <span className="transform group-hover:translate-x-1 transition-transform duration-200">
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.25 10H15.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -85,17 +80,17 @@ const Pricing = () => {
             </div>
           </div>
           <div className="pb-4 overflow-x-scroll">
-            <h4 className="font-heading text-3xl font-medium text-center mb-8">Compare benefits</h4>
+            <h4 className="font-heading text-3xl font-medium text-center mb-8">Planları Karşılaştır</h4>
             <table className="min-w-max">
               <thead>
                 <tr>
                   <th className="w-72 pr-4"></th>
                   <th className="w-72 px-4">
                     <div className="py-4 px-2 shadow-md rounded-2xl">
-                      <span className="block font-medium">Basic</span>
+                      <span className="block font-medium">Başlangıç</span>
                       <div className="flex items-center justify-center">
-                        <span className="font-medium">$59</span>
-                        <span className="ml-1 font-medium text-gray-700">/month</span>
+                        <span className="font-medium">₺1.490</span>
+                        <span className="ml-1 font-medium text-gray-700">/ay</span>
                       </div>
                     </div>
                   </th>
@@ -103,15 +98,15 @@ const Pricing = () => {
                     <div className="py-4 px-2 shadow-md rounded-2xl">
                       <span className="block font-medium">Premium</span>
                       <div className="flex items-center justify-center">
-                        <span className="font-medium">$129</span>
-                        <span className="ml-1 font-medium text-gray-700">/month</span>
+                        <span className="font-medium">₺2.990</span>
+                        <span className="ml-1 font-medium text-gray-700">/ay</span>
                       </div>
                     </div>
                   </th>
                   <th className="w-72 pl-4">
                     <div className="py-4 px-2 shadow-md rounded-2xl">
-                      <span className="block font-medium">Enterprise</span>
-                      <span className="font-medium">Custom</span>
+                      <span className="block font-medium">Kurumsal</span>
+                      <span className="font-medium">Özel</span>
                     </div>
                   </th>
                 </tr>
@@ -120,36 +115,36 @@ const Pricing = () => {
                 <tr>
                   <td>
                     <div className="py-8">
-                      <span className="text-xl font-medium">Support</span>
+                      <span className="text-xl font-medium">Destek</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td className="border-b">
                     <div className="py-8">
-                      <span className="text-sm">Installation Fee</span>
+                      <span className="text-sm">Kayıt Ücreti</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">$119</span>
+                      <span className="text-sm">₺299</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">No Installation Fee</span>
+                      <span className="text-sm">Kayıt Ücreti Yok</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">No Installation Fee</span>
+                      <span className="text-sm">Kayıt Ücreti Yok</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td className="border-b">
                     <div className="py-8">
-                      <span className="text-sm">Satisfaction Guarantee</span>
+                      <span className="text-sm">Memnuniyet Garantisi</span>
                     </div>
                   </td>
                   <td className="border-b">
@@ -186,7 +181,7 @@ const Pricing = () => {
                 <tr>
                   <td className="border-b">
                     <div className="py-8">
-                      <span className="text-sm">24/7 Customer Support</span>
+                      <span className="text-sm">7/24 Müşteri Desteği</span>
                     </div>
                   </td>
                   <td className="border-b">
@@ -223,7 +218,7 @@ const Pricing = () => {
                 <tr>
                   <td className="border-b">
                     <div className="py-8">
-                      <span className="text-sm">Smart Energy Monitoring</span>
+                      <span className="text-sm">İlerleme Takibi</span>
                     </div>
                   </td>
                   <td className="border-b">
@@ -260,73 +255,73 @@ const Pricing = () => {
                 <tr>
                   <td className="pt-12">
                     <div className="py-8">
-                      <span className="text-xl font-medium">Energy Supply</span>
+                      <span className="text-xl font-medium">Hizmet Kapsamı</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td className="border-b">
                     <div className="py-8">
-                      <span className="text-sm">Renewable Energy Sources</span>
+                      <span className="text-sm">Uzman Erişimi</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">50%</span>
+                      <span className="text-sm">Sınırlı</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">75%</span>
+                      <span className="text-sm">Tam</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">90%</span>
+                      <span className="text-sm">Öncelikli</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td className="border-b">
                     <div className="py-8">
-                      <span className="text-sm">Carbon Offsetting</span>
+                      <span className="text-sm">Grup Seansları</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">1.5 metric tons CO2e</span>
+                      <span className="text-sm">Ayda 2</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">5 metric tons CO2e</span>
+                      <span className="text-sm">Sınırsız</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">Custom</span>
+                      <span className="text-sm">Özel</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td className="border-b">
                     <div className="py-8">
-                      <span className="text-sm">Energy Consumption Limit</span>
+                      <span className="text-sm">Bireysel Seans Hakkı</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">500 kWh</span>
+                      <span className="text-sm">Ayda 4</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">1,000 kWh</span>
+                      <span className="text-sm">Ayda 8</span>
                     </div>
                   </td>
                   <td className="border-b">
                     <div className="py-8 text-center">
-                      <span className="text-sm">Custom</span>
+                      <span className="text-sm">Özel</span>
                     </div>
                   </td>
                 </tr>
@@ -347,16 +342,16 @@ const Pricing = () => {
                     <div className="w-full lg:w-2/3 px-4 mb-8 lg:mb-0">
                       <div className="max-w-md xl:max-w-none">
                         <h1 className="font-heading text-4xl xs:text-5xl sm:text-6xl tracking-sm text-white mb-6">
-                          Learn Frontend Web Development
+                          İyileşme Yolculuğunuza Başlayın
                         </h1>
                         <p className="text-lg text-white opacity-80">
-                          Visit www.pixelrocket.store and learn how to become a frontend web developer
+                          Lunova ile bağımlılıkla mücadelede profesyonel ve bütüncül destek alın.
                         </p>
                       </div>
                     </div>
                     <div className="w-full lg:w-1/3 px-4 lg:text-right">
-                      <Link className="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" to="#!">
-                        Get Started
+                      <Link className="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" to="/contact">
+                        Hemen Başlayın
                       </Link>
                     </div>
                   </div>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import FAQItem from '../components/FAQItem';
+import TopBanner from '../components/TopBanner';
 
 const Home = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -10,9 +11,7 @@ const Home = () => {
 
   return (
     <div className="antialiased bg-body text-body font-body">
-      <div>
-        <p className="mb-0 py-3 bg-lime-500 text-center">Bağımlılıkla mücadelede yanınızdayız. İyileşme yolculuğunuzda destek için <a href="#!" className="underline font-semibold">bize ulaşın</a>.</p>
-      </div>
+      <TopBanner />
       <div>
         <section className="relative bg-teal-900" x-data="{ mobileNavOpen: false }">
           <img className="absolute top-0 left-0 w-full h-full" src="/fauna-assets/headers/bg-waves.png" alt="" />
@@ -199,7 +198,7 @@ const Home = () => {
               <span className="inline-block ml-2 text-sm font-medium">Hizmetlerimiz</span>
             </div>
             <div className="border-t border-teal-900 border-opacity-25 pt-14">
-              <h1 className="font-heading text-4xl sm:text-6xl mb-24">Recovery Pathways - İyileşme Yolları</h1>
+              <h1 className="font-heading text-4xl sm:text-6xl mb-24">İyileşme Yolları</h1>
               <div className="flex flex-wrap -mx-4">
                 <div className="w-full sm:w-1/2 px-4 mb-16">
                   <div>
