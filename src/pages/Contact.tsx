@@ -118,6 +118,45 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Contact Info Section */}
+      <section className="py-12 lg:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="font-heading text-4xl sm:text-5xl mb-4">Bize Ulaşın</h2>
+            <p className="text-lg text-gray-700">Sorularınız, başvurularınız veya destek talepleriniz için aşağıdaki kanallardan bize ulaşabilirsiniz.</p>
+          </div>
+          <div className="flex flex-wrap justify-center -mx-4">
+            <div className="w-full sm:w-auto px-4 mb-6">
+              <div className="flex items-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+                <div className="flex-shrink-0 w-12 h-12 mr-4 bg-teal-900 rounded-full flex items-center justify-center">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M22 6l-10 7L2 6" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500 mb-1">E-posta</p>
+                  <a href="mailto:merhaba@lunova.tr" className="font-semibold text-teal-900 hover:underline">merhaba@lunova.tr</a>
+                </div>
+              </div>
+            </div>
+            <div className="w-full sm:w-auto px-4 mb-6">
+              <div className="flex items-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+                <div className="flex-shrink-0 w-12 h-12 mr-4 bg-teal-900 rounded-full flex items-center justify-center">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500 mb-1">Telefon</p>
+                  <a href="tel:+908503053042" className="font-semibold text-teal-900 hover:underline">0850 305 30 42</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Newsletter CTA */}
       <div>
         <div>

@@ -28,8 +28,8 @@ const Home = () => {
                     </Link>
                   </li>
                   <li className="mr-8">
-                    <Link className="inline-block text-white hover:text-lime-500 font-medium" to="/pricing">
-                      Fiyatlandırma
+                    <Link className="inline-block text-white hover:text-lime-500 font-medium" to="/careers">
+                      Gönüllü Ol
                     </Link>
                   </li>
                   <li className="mr-8">
@@ -106,8 +106,8 @@ const Home = () => {
                     </Link>
                   </li>
                   <li className="mb-6">
-                    <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/pricing">
-                      Fiyatlandırma
+                    <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/careers">
+                      Gönüllü Ol
                     </Link>
                   </li>
                   <li className="mb-6">

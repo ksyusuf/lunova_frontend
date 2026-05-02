@@ -25,8 +25,8 @@ const Header = ({ isHome = false }: HeaderProps) => {
                   </Link>
                 </li>
                 <li className="mr-4 lg:mr-8">
-                  <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/pricing">
-                    Fiyatlandırma
+                  <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/careers">
+                    Gönüllü Ol
                   </Link>
                 </li>
                 <li className="mr-4 lg:mr-8">
@@ -93,8 +93,8 @@ const Header = ({ isHome = false }: HeaderProps) => {
                   </Link>
                 </li>
                 <li className="mb-6">
-                  <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/pricing">
-                    Fiyatlandırma
+                  <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/careers">
+                    Gönüllü Ol
                   </Link>
                 </li>
                 <li className="mb-6">
@@ -161,8 +161,8 @@ const Header = ({ isHome = false }: HeaderProps) => {
                 </Link>
               </li>
               <li className="mr-8">
-                <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/pricing">
-                  Fiyatlandırma
+                <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/careers">
+                  Gönüllü Ol
                 </Link>
               </li>
               <li className="mr-8">
@@ -227,8 +227,8 @@ const Header = ({ isHome = false }: HeaderProps) => {
                 </Link>
               </li>
               <li className="mb-6">
-                <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/pricing">
-                  Fiyatlandırma
+                <Link className="inline-block text-teal-900 hover:text-teal-700 font-medium" to="/careers">
+                  Gönüllü Ol
                 </Link>
               </li>
               <li className="mb-6">
