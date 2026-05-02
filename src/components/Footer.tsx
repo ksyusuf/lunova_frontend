@@ -27,8 +27,8 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="inline-block text-gray-600 hover:text-lime-500 font-medium" to="/pricing">
-                      Fiyatlandırma
+                    <Link className="inline-block text-gray-600 hover:text-lime-500 font-medium" to="/careers">
+                      Gönüllü Ol
                     </Link>
                   </li>
                 </ul>

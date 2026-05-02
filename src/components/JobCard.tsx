@@ -7,7 +7,7 @@ interface JobCardProps {
   department: string;
 }
 
-const JobCard = ({ title, location, type, department }: JobCardProps) => {
+const JobCard = ({ title, location, type }: JobCardProps) => {
   return (
     <div className="py-6 px-8 mb-4 bg-white rounded-2xl shadow-md">
       <div className="flex flex-col sm:flex-row md:justify-between items-start">
@@ -28,8 +28,8 @@ const JobCard = ({ title, location, type, department }: JobCardProps) => {
             <span className="ml-2 font-medium text-gray-900">{type}</span>
           </div>
         </div>
-        <Link className="inline-flex ml-auto group items-center text-lg text-black hover:text-lime-600 transition duration-100" to="#!">
-          <span className="mr-1 font-medium">Apply</span>
+        <Link className="inline-flex ml-auto group items-center text-lg text-black hover:text-lime-600 transition duration-100" to="/contact">
+          <span className="mr-1 font-medium">Başvur</span>
           <span className="transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-100">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.25 13.75L13.75 6.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>

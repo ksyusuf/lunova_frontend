@@ -17,11 +17,22 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-5xl sm:text-6xl mb-8">Lunova Kimdir?</h1>
             <p className="text-2xl text-black font-medium mb-10">
-              Lunova, bağımlılıkla mücadelede bütüncül ve yenilikçi çözümler sunan öncü bir dijital platformdur. Amacımız, bağımlılık sürecinin her aşamasında, bireylerin ve ailelerinin yanında durarak kapsamlı destek sağlamaktır.
+              Lunova, ilaçsız yaşam rehabilitasyonunu merkezine alan bütüncül ve yenilikçi bir dijital platformdur. Bağımlılık sürecinin her aşamasında bireylerin ve ailelerinin yanında durarak psikolojik, sosyal ve hukuki destek sunuyoruz.
             </p>
             <Link className="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" to="/contact">
               İletişime Geç
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Platform Durumu */}
+      <section className="py-6">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-amber-50 border-l-4 border-amber-400 rounded-2xl p-6">
+            <p className="text-amber-800 font-medium">
+              <strong>Platform Durumu:</strong> Lunova, şu an aktif geliştirme aşamasındadır. Tüm hizmetler ve gönüllü ağı kurulum sürecindedir. Bu sunum, toplumsal sağlık sorumluluğu kapsamında hazırlanan bir sosyal sorumluluk hizmetidir.
+            </p>
           </div>
         </div>
       </section>
@@ -46,40 +57,111 @@ const About = () => {
         </div>
       </section>
 
-             {/* Uzman Kadro Section */}
-       <section className="py-12 lg:py-24">
-         <div className="container mx-auto px-4">
-           <div className="max-w-4xl mx-auto">
-             <h2 className="font-heading text-4xl sm:text-5xl mb-6">Uzman Kadro</h2>
-             <p className="text-xl text-gray-700 mb-12">
-               Psikologlar, terapistler, bağımlılık danışmanları ve avukatlardan oluşan profesyonel ekibimizle size özel tedavi planları hazırlıyoruz.
-             </p>
-           </div>
-         </div>
-         <div className="flex overflow-x-hidden">
-           <div className="w-1/3 lg:w-1/5 -ml-32 flex-shrink-0 px-2 md:px-4">
-             <img className="block w-full h-full object-cover rounded-3xl" src="/fauna-assets/about/about-image1.png" alt="" />
-           </div>
-           <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
-             <img className="block w-full h-full object-cover rounded-3xl" src="/fauna-assets/about/about-image2.png" alt="" />
-           </div>
-           <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
-             <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image3.png" alt="" />
-           </div>
-           <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
-             <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image4.png" alt="" />
-           </div>
-           <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
-             <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image5.png" alt="" />
-           </div>
-           <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
-             <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image1.png" alt="" />
-           </div>
-           <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
-             <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image2.png" alt="" />
-           </div>
-         </div>
-       </section>
+      {/* Uzman Kadro Section */}
+      <section className="py-12 lg:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-4xl sm:text-5xl mb-6">Uzman Kadro</h2>
+            <p className="text-xl text-gray-700 mb-12">
+              Psikologlar, terapistler, bağımlılık danışmanları ve avukatlardan oluşan profesyonel ekibimizle size özel tedavi planları hazırlıyoruz.
+            </p>
+          </div>
+        </div>
+        <div className="flex overflow-x-hidden">
+          <div className="w-1/3 lg:w-1/5 -ml-32 flex-shrink-0 px-2 md:px-4">
+            <img className="block w-full h-full object-cover rounded-3xl" src="/fauna-assets/about/about-image1.png" alt="" />
+          </div>
+          <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
+            <img className="block w-full h-full object-cover rounded-3xl" src="/fauna-assets/about/about-image2.png" alt="" />
+          </div>
+          <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
+            <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image3.png" alt="" />
+          </div>
+          <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
+            <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image4.png" alt="" />
+          </div>
+          <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
+            <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image5.png" alt="" />
+          </div>
+          <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
+            <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image1.png" alt="" />
+          </div>
+          <div className="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4">
+            <img className="block w-full h-full object-cover rounded-2xl" src="/fauna-assets/about/about-image2.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      {/* Gönüllülük Felsefemiz Section */}
+      <section className="py-12 lg:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto mb-16">
+            <h2 className="font-heading text-4xl sm:text-5xl mb-6">Gönüllülük Felsefemiz</h2>
+            <p className="text-xl text-gray-700 mb-12">
+              Lunova yalnızca bir platform değil, bir topluluktur. Gönüllülerimiz bu topluluğun canlı ve dinamik kalmasını sağlayan temel yapı taşlarıdır.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+          <div className="flex flex-wrap -mx-4">
+            <div className="w-full sm:w-1/2 px-4 mb-8">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-10 h-10 mr-4 bg-lime-100 rounded-full flex items-center justify-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" stroke="#4d7c0f" strokeWidth="1.5"/>
+                    <path d="M10 6v4l3 3" stroke="#4d7c0f" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-1">Kendini Keşfetmek</h4>
+                  <p className="text-gray-600 text-sm">Gönüllülük, kendi sınırlarını, güçlü yönlerini ve değerlerini keşfetmek için eşsiz bir alan sunar.</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full sm:w-1/2 px-4 mb-8">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-10 h-10 mr-4 bg-teal-100 rounded-full flex items-center justify-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 7.5a5 5 0 0 0-7.07 0L10 7.93l-.43-.43A5 5 0 0 0 2.5 14.5l.43.43L10 21.5l7.07-7.07.43-.43a5 5 0 0 0 0-7.07v.07z" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-1">Empati</h4>
+                  <p className="text-gray-600 text-sm">Bağımlılığın bireysel ve ailesel boyutlarını anlayan, yargılamadan dinleyen bir topluluk inşa ediyoruz.</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full sm:w-1/2 px-4 mb-8">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-10 h-10 mr-4 bg-lime-100 rounded-full flex items-center justify-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 17v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#4d7c0f" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="7" cy="7" r="4" stroke="#4d7c0f" strokeWidth="1.5"/>
+                    <path d="M19 17v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="#4d7c0f" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-1">Toplumsal Sorumluluk</h4>
+                  <p className="text-gray-600 text-sm">Her gönüllü, bağımlılıkla mücadelede toplumsal farkındalığın ve dayanışmanın somut bir parçası olur.</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full sm:w-1/2 px-4 mb-8">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-10 h-10 mr-4 bg-teal-100 rounded-full flex items-center justify-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 18s6-3 6-7.5V4l-6-2.25L4 4v6.5C4 15 10 18 10 18z" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-1">Önleyici Rol</h4>
+                  <p className="text-gray-600 text-sm">Gönüllüler, toplumda bağımlılığı önleyici farkındalık çalışmalarının en etkin elçileridir.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
 
       {/* Sürdürülebilir İyileşme Section */}
       <section className="py-12 lg:py-24 bg-lime-50">
@@ -98,7 +180,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h1 className="font-heading text-5xl sm:text-6xl mb-16 text-center">Vizyonumuz ve Misyonumuz</h1>
-            
+
             <div className="mb-16">
               <h2 className="font-heading text-3xl sm:text-4xl mb-4">Vizyon</h2>
               <p className="text-lg text-gray-700">
@@ -114,16 +196,16 @@ const About = () => {
               <p className="text-lg text-gray-700">
                 Teknolojiyi ve bilimi kullanarak bağımlılık tedavisinde yenilikçi yaklaşımları benimseyen, damgalanmayı ortadan kaldıran ve iyileşme sürecini destekleyen bir ekosistem oluşturmak.
               </p>
-                         </div>
-             
-             <div className="mt-8 p-6 bg-lime-50 rounded-2xl border-l-4 border-teal-900">
-               <p className="text-gray-700 italic">
-                 <strong className="text-teal-900">Not:</strong> Bu sunum, Lunova'nın toplumsal sağlık sorumluluğu gereği hazırladığı bir sosyal sorumluluk hizmetidir. Amacımız bağımlılık konusunda farkındalık yaratmak ve yardım seçenekleri hakkında bilgi vermektir.
-               </p>
-                           </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-lime-50 rounded-2xl border-l-4 border-teal-900">
+              <p className="text-gray-700 italic">
+                <strong className="text-teal-900">Not:</strong> Bu sunum, Lunova'nın toplumsal sağlık sorumluluğu gereği hazırladığı bir sosyal sorumluluk hizmetidir. Amacımız bağımlılık konusunda farkındalık yaratmak ve yardım seçenekleri hakkında bilgi vermektir.
+              </p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
       {/* Newsletter CTA */}
       <div>

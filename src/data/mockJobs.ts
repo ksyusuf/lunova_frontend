@@ -11,98 +11,82 @@ export interface Job {
 export const mockJobs: Job[] = [
   {
     id: '1',
-    title: 'Klinik Psikolog',
-    location: 'İstanbul, Türkiye',
-    type: 'Tam Zamanlı',
-    department: 'Psikoloji',
-    description: 'Bağımlılıkla mücadele eden bireylere bireysel ve grup terapi hizmetleri sunan, online terapi deneyimine sahip klinik psikolog aranmaktadır.',
+    title: 'Topluluk Gönüllüsü',
+    location: 'Online / Türkiye Geneli',
+    type: 'Gönüllü',
+    department: 'Topluluk',
+    description: 'Bağımlılıkla mücadele eden bireylere ve ailelerine online destek toplantılarında, farkındalık etkinliklerinde ve forum moderasyonunda destek sağlayacak topluluk gönüllüsü arıyoruz.',
     requirements: [
-      'Klinik Psikoloji Lisans/Lisansüstü diploması',
-      'En az 3 yıl bağımlılık alanında klinik deneyim',
-      'Online terapi konusunda deneyim',
-      'Bütüncül tedavi yaklaşımına hakimiyet',
-      'Empati, profesyonellik ve gizlilik ilkelerine bağlılık',
-      'Etik kurallara uyum'
+      'Empati ve aktif dinleme yeteneği',
+      'Bağımlılık veya ruh sağlığı alanında kişisel ya da mesleki deneyim tercih edilir',
+      'Haftada en az 3 saat zaman ayırabilme',
+      'Gizlilik ilkelerine titizlikle uyum',
+      'Takım ruhuna sahip, sorumluluk sahibi',
+      'Temel dijital araç kullanımı (Zoom, e-posta vb.)'
     ]
   },
   {
     id: '2',
-    title: 'Bağımlılık Danışmanı',
-    location: 'Ankara, Türkiye',
-    type: 'Tam Zamanlı',
-    department: 'Psikoloji',
-    description: 'Bağımlılık tedavi süreçlerinde danışan destek gruplarına liderlik edecek ve rehabilitasyon programları yürütecek deneyimli bağımlılık danışmanı aranmaktadır.',
+    title: 'Destek Gönüllüsü',
+    location: 'Online / Türkiye Geneli',
+    type: 'Gönüllü',
+    department: 'Destek',
+    description: 'Bireysel iyileşme süreçlerinde eşlik etmek, aile destek gruplarına katılmak ve kriz anlarında ilk yönlendirmeyi sağlamak üzere destek gönüllüsü arıyoruz. Psikolog veya sosyal hizmet uzmanı öğrencileri teşvik edilir.',
     requirements: [
-      'Bağımlılık Danışmanlığı Sertifikası',
-      '5+ yıl bağımlılık tedavi deneyimi',
-      '12 Adım programı bilgisi',
-      'Grup terapi ve motivasyonel görüşme becerileri',
-      'Nüks önleme stratejileri konusunda deneyim',
-      'Çok yönlü destek sağlama yeteneği'
+      'Psikoloji, sosyal hizmet, hemşirelik veya ilgili alanda öğrenci/mezun tercih edilir',
+      'Temel kriz iletişimi konusunda ilgi veya eğitim',
+      'Motivasyonel görüşme tekniklerine açıklık',
+      'Düzenli süpervizyon seanslarına katılım',
+      'Haftada en az 4 saat zaman ayırabilme',
+      'Etik ve mesleki sınırlara saygı'
     ]
   },
   {
     id: '3',
-    title: 'Aile Terapisti',
-    location: 'İzmir, Türkiye',
-    type: 'Yarı Zamanlı',
-    department: 'Psikoloji',
-    description: 'Bağımlılıktan etkilenen ailelere destek ve terapi hizmetleri sunacak, aile dinamiklerini iyileştirmeye odaklı aile terapisti aranmaktadır.',
+    title: 'Teknik Gönüllü',
+    location: 'Online / Türkiye Geneli',
+    type: 'Gönüllü',
+    department: 'Teknoloji',
+    description: 'Lunova platformunun geliştirilmesine, veri güvenliğine, arayüz iyileştirmelerine ve teknik altyapı çalışmalarına katkı sağlayacak yazılım veya tasarım alanında deneyimli teknik gönüllü arıyoruz.',
     requirements: [
-      'Aile Terapisi eğitimi ve sertifikası',
-      'En az 2 yıl aile terapisi deneyimi',
-      'Bağımlılık ailelerinde çalışma deneyimi tercih',
-      'Çift ve aile terapisi modellerine hakimiyet',
-      'Psikoeğitim ve destek grupları deneyimi',
-      'Güçlü iletişim ve empati yeteneği'
+      'Yazılım geliştirme, UX/UI tasarım, veri güvenliği veya sistem yönetimi deneyimi',
+      'Sosyal sorumluluk projelerine katkı sağlama motivasyonu',
+      'Kullanıcı gizliliği ve veri etiği konusunda duyarlılık',
+      'Ekip ortamında uzaktan çalışma deneyimi',
+      'Haftada en az 3 saat zaman ayırabilme',
+      'Açık kaynak veya sivil teknoloji projelerine ilgi artı'
     ]
   },
   {
     id: '4',
-    title: 'Sosyal Medya Uzmanı',
-    location: 'İstanbul, Türkiye',
-    type: 'Tam Zamanlı',
-    department: 'Pazarlama',
-    description: 'Bağımlılık farkındalığı ve iyileşme süreçleri konusunda etik, duyarlı içerik üretip sosyal medya hesaplarını yönetecek sosyal medya uzmanı aranmaktadır.',
+    title: 'İçerik & Farkındalık Gönüllüsü',
+    location: 'Online / Türkiye Geneli',
+    type: 'Gönüllü',
+    department: 'İletişim',
+    description: 'Bağımlılık farkındalığı üzerine blog yazıları, sosyal medya içerikleri ve bilgilendirme materyalleri hazırlayacak; toplumda damgalanmayı azaltmaya katkı sunacak içerik gönüllüsü arıyoruz.',
     requirements: [
-      'Sosyal medya pazarlama ve yönetim deneyimi',
-      'İçerik üretimi ve stratejik planlama yeteneği',
-      'Bağımlılık ve ruh sağlığı konularında duyarlılık',
-      'Analitik düşünme ve raporlama becerileri',
-      'SEO ve içerik optimizasyonu bilgisi',
-      'Toplumsal farkındalık projelerinde deneyim'
+      'Türkçe yazım, blog veya içerik üretim deneyimi',
+      'Bağımlılık ve ruh sağlığı konularında araştırma yapabilme',
+      'Etik, kapsayıcı ve damgalanmayı azaltan dil kullanımı',
+      'Sosyal medya araçlarına (Instagram, LinkedIn) hakimiyet tercih edilir',
+      'Haftada en az 2–3 saat zaman ayırabilme',
+      'Araştırma ve kaynak doğrulama hassasiyeti'
     ]
   },
   {
     id: '5',
-    title: 'Online Terapi Koordinatörü',
-    location: 'Remote / Türkiye',
-    type: 'Tam Zamanlı',
-    department: 'Psikoloji',
-    description: 'Online terapi hizmetlerinin koordinasyonunu yürütecek, teknoloji destekli terapi platformlarını yönetecek koordinatör aranmaktadır.',
+    title: 'Hukuki Bilgi Gönüllüsü',
+    location: 'Online / Türkiye Geneli',
+    type: 'Gönüllü',
+    department: 'Hukuk',
+    description: 'Bağımlılık sürecinde karşılaşılan hukuki sorunlar hakkında bilgilendirici içerik hazırlayacak, genel hukuki yönlendirme desteği sağlayacak hukuk fakültesi öğrencisi veya avukat gönüllüsü arıyoruz.',
     requirements: [
-      'Klinik Psikoloji veya ilgili lisans mezunu',
-      'Online terapi platform deneyimi',
-      'Teknoloji okuryazarlığı',
-      'Koordinasyon ve yönetim becerileri',
-      'HIPAA ve veri güvenliği bilgisi',
-      'İletişim ve ekip çalışması yeteneği'
-    ]
-  },
-  {
-    id: '6',
-    title: 'İçerik Editörü / Blogger',
-    location: 'İstanbul, Türkiye',
-    type: 'Freelance',
-    department: 'Pazarlama',
-    description: 'Bağımlılık konusunda bilinçlendirici blog yazıları ve eğitici içerikler üretecek, web sitesi içeriklerini yönetecek içerik editörü aranmaktadır.',
-    requirements: [
-      'Türkçe yazım ve editörlük deneyimi',
-      'Blog yazarlığı ve SEO içerik üretimi',
-      'Bağımlılık ve ruh sağlığı konularında bilgi',
-      'Araştırma ve kaynak doğrulama becerileri',
-      'Etik ve duyarlı dil kullanımı',
-      'WordPress ve içerik yönetim sistemleri deneyimi'
+      'Hukuk fakültesi 3. sınıf ve üzeri öğrenci veya avukat',
+      'Ceza hukuku, aile hukuku veya sağlık hukuku alanında ilgi',
+      'Bireysel hukuki temsil sağlamaksızın genel bilgilendirme yapabilme',
+      'Gizlilik ve mesleki etik kurallarına uyum',
+      'Haftada en az 2 saat zaman ayırabilme',
+      'Savunmasız gruplara yönelik çalışmaya açık olma'
     ]
   }
 ];
