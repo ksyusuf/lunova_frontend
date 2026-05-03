@@ -15,11 +15,12 @@ const Home = () => {
       <div>
         <section className="relative bg-teal-900" x-data="{ mobileNavOpen: false }">
           <img className="absolute top-0 left-0 w-full h-full" src="/fauna-assets/headers/bg-waves.png" alt="" />
-          <nav className="py-6">
+          <nav className="mx-4 py-6">
             <div className="container mx-auto px-4">
               <div className="relative flex items-center justify-between">
-                <Link className="inline-block" to="/">
-                  <img className="h-8" src="/images/logo-white.svg" alt="" />
+                <Link className="inline-flex items-center gap-2" to="/">
+                  <img className="h-8" src="/images/logo.png" alt="Lunova" />
+                  <span className="text-xl font-bold text-white tracking-wide">LUNOVA</span>
                 </Link>
                 <ul className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
                   <li className="mr-8">
@@ -84,8 +85,9 @@ const Home = () => {
             <div className="fixed inset-0 bg-violet-900 opacity-20" onClick={() => setMobileNavOpen(false)}></div>
             <nav className="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
               <div className="flex items-center justify-between">
-                <Link className="inline-block" to="/">
-                  <img className="h-8" src="/fauna-assets/logos/sign-logo-flow.svg" alt="" />
+                <Link className="inline-flex items-center gap-2" to="/">
+                  <img className="h-8" src="/images/logo-black.png" alt="Lunova" />
+                  <span className="text-xl font-bold text-teal-900 tracking-wide">LUNOVA</span>
                 </Link>
                 <div className="flex items-center">
                   <Link className="inline-flex py-2.5 px-4 mr-6 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" to="/login">
